@@ -1,0 +1,1 @@
+[o1,o2] = elevator(3)

@@ -1,10 +1,14 @@
-function [current_state, y] = elevator(u)
-current_state = 1;
+function [state ,y] = elevator(u)
+persistent current_state
+if(isempty(current_state))
+    current_state = 1;
+end
 switch current_state
     case 1
         switch u
             case 1
                 current_state = 1;
+                y = "s";
             case 2
                 current_state = 2;
                 y = "u1";
@@ -19,6 +23,7 @@ switch current_state
                 y = "d1";
             case 2
                 current_state = 2;
+                y = "s";
             otherwise
                 current_state = 3;
                 y = "u1";
@@ -33,6 +38,8 @@ switch current_state
                 y = "d1";
             otherwise
                 current_state = 3;
+                y = "s";
         end
 end
+state = current_state;
 end
