@@ -1,4 +1,4 @@
-function [state ,y] = elevator(u)
+function [state ,y] = elevatormealy(u)
 persistent current_state
 if(isempty(current_state))
     current_state = 1;

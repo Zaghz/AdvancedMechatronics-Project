@@ -1,1 +1,1 @@
-[o1,o2] = elevator(3)
+[o1,o2] = elevatormoore(3)
