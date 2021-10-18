@@ -28,7 +28,7 @@ switch current_state
                 current_state = 3;
                 y = "u1";
         end
-    case 3
+    otherwise
         switch u
             case 1
                 current_state = 1;
