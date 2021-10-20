@@ -41,5 +41,5 @@ switch current_state
                 y = "s";
         end
 end
-state = current_state; %output current state
+state = current_state; 	
 end
