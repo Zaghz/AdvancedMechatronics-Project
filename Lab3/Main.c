@@ -39,6 +39,10 @@ void delay(int number_of_seconds)
 }
 int main(){
 /*system*/
+printf("Enter a desired horizontal angle: ");
+scanf("%d", &desh);
+printf("Enter a desired vertical angle: ");
+scanf("%d", &desv);
 ON = 1;
 if(ON == 1){
     /*standby*/
