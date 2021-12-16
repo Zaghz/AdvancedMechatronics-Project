@@ -73,7 +73,7 @@ if(ON == 1){
     if(motorcalibration == 1 && sensorcalibration == 1){
     /*Startpositiontracking*/
     /*controller*/
-    while (x==1){  
+    while (x==0){  
     e1 =  desh - ench;
     e2 =  desv - encv;
     e1i = (e1 + e1i)/i;
